@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logout</title>
+</head>
+<!-- TODO 08 로그인/로그아웃 페이지 Thymeleaf 이용해서 커스터마이징-->
+<body>
+    <form method="post" action="/logout">
+        로그아웃<br />
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+        <input type="submit" />
+    </form>
+
+</body>
+</html>
