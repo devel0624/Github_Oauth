@@ -3,11 +3,12 @@
 
 <!--    TODO 09 Spring Security JSP Taglib 사용   -->
 <div sec:authorize="isAuthenticated()">
-    <span sec:authentication="principal.username" />,&nbsp;
+    <span sec:authentication="name" />,&nbsp;
     <a href="/auth/logout">Logout</a>
 </div>
 <div sec:authorize="!isAuthenticated()">
-    <a href="/redirect-index">Login</a>
+    <a href="/redirect-index">ID/PW Login</a> <br>
+    <a href="/git/oauth">GitHub Oauth Login</a> <br>
 </div>
 <br />
 <a href="/">Go to Main</a>

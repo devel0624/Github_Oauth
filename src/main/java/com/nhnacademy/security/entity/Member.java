@@ -16,7 +16,7 @@ import java.util.Collections;
 @Setter
 @Entity
 @Table(name = "Members")
-public class Member implements UserDetails {
+public class Member{
 
     @Id
     @Column(name = "member_id")
@@ -30,39 +30,4 @@ public class Member implements UserDetails {
 
     @OneToOne(mappedBy = "member",cascade = { CascadeType.PERSIST, CascadeType.MERGE })
     private Authority authority;
-
-    @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        return Collections.singletonList(new SimpleGrantedAuthority(authority.getAuthority()));
-    }
-
-    @Override
-    public String getPassword() {
-        return pwd;
-    }
-
-    @Override
-    public String getUsername() {
-        return id;
-    }
-
-    @Override
-    public boolean isAccountNonExpired() {
-        return true;
-    }
-
-    @Override
-    public boolean isAccountNonLocked() {
-        return true;
-    }
-
-    @Override
-    public boolean isCredentialsNonExpired() {
-        return true;
-    }
-
-    @Override
-    public boolean isEnabled() {
-        return true;
-    }
 }
