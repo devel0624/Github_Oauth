@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring_security" />
+        <module name="이성준(광주 1기) - 인증 1일차 과제 제출 (아이디비밀번호 인증)" />
       </profile>
     </annotationProcessing>
   </component>

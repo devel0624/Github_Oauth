@@ -1,0 +1,22 @@
+GET https://github.com/login/oauth/authorize?client_id=2f3f0b35e5879ce2bb26&redirect_uri=localhost:8080&login=devel0624@gmail.com
+Accept: application/json
+
+###
+
+POST https://github.com/login/oauth/authorize?client_id=2f3f0b35e5879ce2bb26
+Accept: application/json
+###
+
+
+POST https://github.com/login/oauth/authorize
+Accept: application/json
+
+{
+ "login_field":"",
+
+}
+
+###
+
+GET https://github.com/login/oauth/authorize?client_id=2f3f0b35e5879ce2bb26&client_secret=2e945c7195931a4e3f2c1451e94b250ca8bac698&redirect_uri=http://localhost:8080
+Accept: application/json

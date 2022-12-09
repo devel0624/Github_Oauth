@@ -19,4 +19,9 @@
         <level value="error"/>
         <appender-ref ref="console" />
     </root>
+
+    <root>
+        <level value="info"/>
+        <appender-ref ref="CONSOLE"/>
+    </root>
 </configuration>
